@@ -12,3 +12,8 @@ user has to choose the right answer , the score is tracked and diplayed at the e
 
 
 <img width="397" alt="enc32" src="https://github.com/areebquadri/CryptographyCppAndQuiz/assets/139630610/327922d2-eb7a-4404-abb5-702ba7054b35">
+
+
+
+
+<img width="386" alt="enc4" src="https://github.com/areebquadri/CryptographyCppAndQuiz/assets/139630610/a18aa078-6f60-4591-8b11-5de00fe88736">
