@@ -1,12 +1,14 @@
+//Note: this is old version code .bak file (Ignore it), Current version in cpp file
+/*
 #include<dos.h>
-#include<iostream.h>
+#include<iostream>
 #include<fstream.h>
 #include<ctype.h>
 #include<string.h>
 #include<stdlib.h>
 #include<stdio.h>
 #include<conio.h>
-#include<graphics.h>
+//#include<graphics.h>
 			   // by muhammad areeb quadri
 char keytxt[25];
 // the cryp function
@@ -544,6 +546,6 @@ else
 getch();
 }
 
-
+*/
 
 
