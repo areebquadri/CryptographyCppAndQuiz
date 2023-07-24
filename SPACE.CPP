@@ -72,7 +72,7 @@ void cryptography(char infostr[],char keytxt[])
 
   }
 
-//***************************************break/hold-Cryptography-code*****************************
+//***************************************------*****************************
 
 //***************************************Quiz-code-begins*******************************************
  char ans;
@@ -194,7 +194,7 @@ if((ex=='y')||(ex=='Y'))
 goto begin;
 
 }
-else         //***************Quiz-code-ended--***Crpyptography-code-continues************************
+else         //******************Crpyptography-code-continues************************
 if(mc==2)
 {
   cout<<endl;
