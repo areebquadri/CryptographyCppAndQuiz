@@ -335,7 +335,6 @@ int ch,mc;  //
 gotoxy(27,7);cout<<"By";
 gotoxy(31,11);cout<<"MUHAMMAD";
 gotoxy(34,12);cout<<"AREEB QUADRI";
-gotoxy(32,20);cout<<"\nLITTLE FLOWERS SR.SEC SCHOOL";
 delay(1500);
 gotoxy(27,7);cout<<"  ";delay(700);
 gotoxy(31,11);cout<<"         ";delay(500);
