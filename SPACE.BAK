@@ -12,186 +12,41 @@
 //#include<graphics.h>
 			   // by muhammad areeb quadri
 char keytxt[25];
-// the cryp function
+// the encryption function
 void cryptography(char infostr[],char keytxt[])
 {
-  // strcat(keytxt,infostr);
+  
+   unordered_map<char,char> abc_key;
+   for(int i=0;i<26;i++){
+    abc_key[char(int('a')+ i)]=keytxt[i];
+   }
 
   cout<<endl;
-  //puts(keytxt);
 
   for(int i=0;i<strlen(infostr);i++)
   {
-   if(infostr[i]=='a')
-   {cout<<keytxt[0];}
-   else
-   if(infostr[i]=='b')
-   {cout<<keytxt[1];}
-   else
-   if(infostr[i]=='c')
-   {cout<<keytxt[2];}
-   else
-   if(infostr[i]=='d')
-   {cout<<keytxt[3]; }
-   else
-   if(infostr[i]=='e')
-   {cout<<keytxt[4];  }
-   else
-   if(infostr[i]=='f')
-   {cout<<keytxt[5]; }
-   else
-   if(infostr[i]=='g')
-   {cout<<keytxt[6];  }
-   else
-   if(infostr[i]=='h')
-   {cout<<keytxt[7];   }
-   else
-   if(infostr[i]=='i')
-   {cout<<keytxt[8];  }
-   else
-   if(infostr[i]=='j')
-   {cout<<keytxt[9];}
-   else
-   if(infostr[i]=='k')
-    {cout<<keytxt[10]; }
-   else
-   if(infostr[i]=='l')
-   {cout<<keytxt[11]; }
-   else
-   if(infostr[i]=='m')
-   {cout<<keytxt[12]; }
-   else
-   if(infostr[i]=='n')
-   {cout<<keytxt[13];  }
-   else
-   if(infostr[i]=='o')
-   {cout<<keytxt[14];}
-   else
-   if(infostr[i]=='p')
-   {cout<<keytxt[15]; }
-   else
-   if(infostr[i]=='q')
-   {cout<<keytxt[16]; }
-   else
-   if(infostr[i]=='r')
-   {cout<<keytxt[17]; }
-   else
-   if(infostr[i]=='s')
-   {cout<<keytxt[18]; }
-   else
-   if(infostr[i]=='t')
-   {cout<<keytxt[19]; }
-   else
-   if(infostr[i]=='u')
-   {cout<<keytxt[20]; }
-   else
-   if(infostr[i]=='v')
-   {cout<<keytxt[21]; }
-   else
-   if(infostr[i]=='w')
-   {cout<<keytxt[22]; }
-   else
-   if(infostr[i]=='x')
-   {cout<<keytxt[23]; }
-   else
-   if(infostr[i]=='y')
-   {cout<<keytxt[24]; }
-   else
-   cout<<keytxt[25];
-
-
-
+      cout<<abc_key[infostr[i]];
+      
   }
 
   }
 
   void decodeit(char infostr[],char keytxt[])
 {
-  // strcat(keytxt,infostr);
+  
+    unordered_map<int,char> key_abc;
+    for(int i=0;i<26;i++){
+      key_abc[int(keytxt[i])] = char(int('a')+ i);
+      
+    }
 
   cout<<endl;
   //puts(keytxt);
 
   for(int i=0;i<strlen(infostr);i++)
   {
-   if(infostr[i]==keytxt[0])
-   {cout<<"a";}
-   else
-   if(infostr[i]==keytxt[1])
-   {cout<<"b";}
-   else
-   if(infostr[i]==keytxt[2])
-   {cout<<"c";}
-   else
-   if(infostr[i]==keytxt[3])
-   {cout<<"d"; }
-   else
-   if(infostr[i]==keytxt[4])
-   {cout<<"e";  }
-     else
-     if(infostr[i]==keytxt[5])
-     {cout<<"f"; }
-     else
-     if(infostr[i]==keytxt[6])
-     {cout<<"g";  }
-   else
-   if(infostr[i]==keytxt[7])
-   {cout<<"h";   }
-   else
-   if(infostr[i]==keytxt[8])
-   {cout<<"i";  }
-    else
-    if(infostr[i]==keytxt[9])
-    {cout<<"j";}
-    else
-    if(infostr[i]==keytxt[10])
-    {cout<<"k"; }
-  else
-  if(infostr[i]==keytxt[11])
-  {cout<<"l"; }
-   else
-   if(infostr[i]==keytxt[12])
-   {cout<<"m"; }
-   else
-   if(infostr[i]==keytxt[13])
-   {cout<<"n";  }
-     else
-     if(infostr[i]==keytxt[14])
-     {cout<<"o";}
-      else
-      if(infostr[i]==keytxt[15])
-      {cout<<"p"; }
-       else
-       if(infostr[i]==keytxt[16])
-       {cout<<"q"; }
-	else
-	if(infostr[i]==keytxt[17])
-	{cout<<"r"; }
-	 else
-	 if(infostr[i]==keytxt[18])
-	 {cout<<"s"; }
-	  else
-	  if(infostr[i]==keytxt[19])
-	  {cout<<"t"; }
-	   else
-	   if(infostr[i]==keytxt[20])
-	   {cout<<"u"; }
-	    else
-	    if(infostr[i]==keytxt[21])
-	    {cout<<"v"; }
-	    else
-	     if(infostr[i]==keytxt[22])
-	     {cout<<"w"; }
-	      else
-	      if(infostr[i]==keytxt[23])
-	      {cout<<"x"; }
-	       else
-	       if(infostr[i]==keytxt[24])
-	       {cout<<"y"; }
-		else
-		cout<<"z";
-
-
+   
+    cout<<key_abc[int(infostr[i])];
 
   }
 
