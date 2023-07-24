@@ -266,7 +266,7 @@ if(mc==2)
    }
 
 
-     cout<<endl<<"Final key(encrypted code can not be decrypted by brute force)";
+     cout<<endl<<"Final key(encrypted code can not be decrypted easily by brute force)";
     cout<<endl;
     int fj;
     for(fj=0;keytxt[fj]!='\0';fj++)
